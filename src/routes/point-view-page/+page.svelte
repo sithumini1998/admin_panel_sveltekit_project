@@ -1,3 +1,10 @@
+<script>
+  import { onMount } from 'svelte';
+import { goto } from '$app/navigation';
+
+
+</script>
+
 <div class="flex flex-col relative h-dvh">
 
 <div class="flex flex-row h-1/2  mt-40  ">
@@ -6,7 +13,7 @@
             <p class="my-2 pt-2">User id:xxxxxxx123</p>
             <p class="my-2 font-semibold">LKR 250*</p>
             <p class="my-4">Available Balance</p>
-            <button class=" text-white   mb-2 hover:bg-yellow-600 focus:outline-none w-2/3 border-2 border-black-500 rounded-2xl">
+            <button class=" text-white   mb-2 hover:bg-yellow-600 focus:outline-none w-2/3 border-2 border-black-500 rounded-2xl"  on:click={() => goto('/transaction-page')}>
                 Tranfer Money
             </button>
         </div>
@@ -49,6 +56,11 @@
                     <!-- Repeat similar rows for Row 2 and Row 3 -->
                   </tbody>
                 </table>
+                <div class="flex justify-end mt-4 mr-20">
+                  <button class="text-blue-500 hover:underline" >
+                    more >>
+                  </button>
+                </div>
               </div>
                 
               

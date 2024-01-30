@@ -1,6 +1,12 @@
+<script>
+  import { onMount } from 'svelte';
+import { goto } from '$app/navigation';
+
+
+</script>
 <div class="flex flex-col relative h-dvh">
     <div class="absolute right-32 top-16">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-40 ">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-40 " on:click={() => goto('/add-order')}>
             <i class="fa-solid fa-plus "></i>
             Add Record
           </button>

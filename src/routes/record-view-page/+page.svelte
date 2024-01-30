@@ -1,3 +1,9 @@
+<script>
+  import { onMount } from 'svelte';
+import { goto } from '$app/navigation';
+
+
+</script>
 <div class="flex flex-col relative h-dvh">
     <h2 class="text-center ">User Managment</h2>
 <div class="flex flex-row h-1/2  mt-40  ">
@@ -6,9 +12,9 @@
             <button class="bg-blue-500 text-white p-2  mb-2 hover:bg-blue-600 focus:outline-none w-2/3">
                 User
             </button>
-            <button class="bg-blue-300 text-white p-2  mb-2 hover:bg-green-600 focus:outline-none w-2/3">
-                Order
-            </button>
+            <button class="bg-blue-300 text-white p-2  mb-2 hover:bg-yellow-600 focus:outline-none w-2/3 " on:click={() => goto('/order-record-view')}>
+              Order
+          </button>
             <button class="bg-blue-300 text-white p-2  mb-2 hover:bg-yellow-600 focus:outline-none w-2/3">
                 Point
             </button>

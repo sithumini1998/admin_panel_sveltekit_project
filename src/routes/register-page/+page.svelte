@@ -1,3 +1,4 @@
+
 <div class="flex flex-row h-dvh">
     <div class="basis-1/2 relative">
         <div class="absolute flex flex-col top-1/3 left-1/3 w-1/2 h-auto">
@@ -31,7 +32,7 @@
                 <input type="text" id="username" name="username" class="mt-1  w-full  border border-black text-xs p-1  text-center" placeholder="Leave to Empty Autogenerate">
             </div>
             <div class="flex justify-between mt-4">
-                <button class="bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none w-1/5">
+                <button class="bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none w-1/5"  >
                     Cancel
                 </button>
                 <button class="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 focus:outline-none w-1/5">
