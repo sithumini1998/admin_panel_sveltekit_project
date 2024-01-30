@@ -1,7 +1,7 @@
 
 <div class="flex flex-row h-dvh ">
    <div class="basis-2/5 bg-blue-500 flex flex-col relative ">
-     <div class="absolute top-80 left-1/4">welcome to page</div>
+     <div class="absolute top-80 left-1/4 font-sans text-2xl">welcome to page</div>
      <div class="absolute top-1/2 left-1/2">sign in to continue access</div>
    </div>
    <div class="  basis-3/5 relative bg-white ">
@@ -16,9 +16,22 @@
             <input type="text" id="username" name="username" class="mt-1  w-full  border border-black text-xs p-1  text-center" placeholder="Enter your user Id">
         </div>
         <button class="bg-blue-500 text-white p-1  w-full mt-4">Login</button>
-        <p class="text-center font-medium mt-1">or</p>
-        <button class="bg-blue-500 text-white p-1  w-full mt-4">sign in with google</button>
-
+        <div class="flex items-center mt-4">
+            <hr class="flex-grow border-t border-gray-300">
+            <span class="mx-4 text-gray-500">or</span>
+            <hr class="flex-grow border-t border-gray-300">
+          </div>
+        
+        <button class="bg-blue-500 text-white p-1 flex justify-center items-center space-x-2 mt-4">
+        <i class="fa-brands fa-google"></i> <!-- Google Icon from FontAwesome -->
+        <span>Sign in with Google</span>
+        </button>
+        <div class="flex items-center justify-center ">
+    <span class="mr-2">Not a member?</span>
+    <button class="text-blue-500 hover:underline focus:outline-none">
+        Create Account
+    </button>
+</div>
         
      </div>
      
